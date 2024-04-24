@@ -1,0 +1,1 @@
+String appUrl = 'https://flutter.dev'; //! Change this url

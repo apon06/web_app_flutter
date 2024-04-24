@@ -1,0 +1,103 @@
+# The free_webview.
+#
+# It helps turn your website into an app
+name: free_webview
+description: "It helps turn your website into an app"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  # The free_webview package requires Flutter SDK version 3.2.0 or greater.
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  # The Flutter package provides access to the Flutter SDK.
+  flutter:
+    # Flutter SDK version.
+    sdk: flutter
+
+  # The flutter_native_splash package allows you to customize the
+  # splash screen of your app.
+  flutter_native_splash: ^2.2.1
+
+  # The connectivity_plus package allows you to check if there is an
+  # internet connection or not.
+  connectivity_plus: ^5.0.0
+
+  # The lottie package allows you to display animations created in
+  # Adobe After Effects.
+  lottie: ^2.7.0
+
+  # The url_launcher package allows you to launch URLs on mobile, web,
+  # and desktop from your Dart code.
+  url_launcher: ^6.2.6
+
+  # The webview_flutter package allows you to display web content in a
+  # Flutter widget.
+  webview_flutter: ^2.0.0
+
+dev_dependencies:
+  # The flutter_test package allows you to write unit tests for your
+  # Flutter code.
+  flutter_test:
+    # Flutter SDK version.
+    sdk: flutter
+
+  # The change_app_package_name package allows you to change the
+  # package name of your app.
+  change_app_package_name: ^1.1.0 # Change The Package Name.Then Help This Pakage
+
+  # The flutter_launcher_icons package allows you to customize the
+  # launcher icons of your app.
+  flutter_launcher_icons: ^0.13.1
+
+flutter_native_splash:
+  # The image parameter specifies the path to an image asset that will be
+  # used as the splash screen of the app.
+  image: "assets/applogo.png" # Change The Icon or Logo
+
+  # The color parameter specifies the color of the background.
+  color: "#010910"
+
+  # The ios_content_mode parameter specifies how the image should be
+  # displayed in iOS. If not specified, the default value is
+  # center.
+  ios_content_mode: scaleAspectFill
+
+  # The android_gravity parameter specifies how the image should be
+  # displayed in Android. If not specified, the default value is
+  # center.
+  android_gravity: center
+
+flutter_launcher_icons:
+  # The android parameter specifies the path to an image asset that will
+  # be used as the launcher icon of the app on Android.
+  android: "launcher_icon" # Change The Icon or Logo
+
+  # The ios parameter specifies whether the package should generate
+  # iOS launcher icons.
+  ios: true
+
+  # The image_path parameter specifies the path to an image asset that
+  # will be used as the launcher icon of the app on both Android and iOS.
+  image_path: "assets/applogo.png" # Change The Icon or Logo
+
+# The linter package provides a set of analyzer rules that can
+# automatically check your code for errors and provide suggestions
+# to fix them. The rules defined by the linter package are
+# documentation-oriented and do not generate Dart code.
+flutter_lints: ^2.0.0
+
+flutter:
+
+  # The uses-material-design property specifies that the app uses
+  # Material Design.
+  uses-material-design: true
+
+  # The assets property specifies the names of non-Dart files that are
+  # bundled with the app.
+  assets:
+    # The lottie/nointernet.json asset is an animation created in
+    # Adobe After Effects.
+    - assets/lottie/nointernet.json
